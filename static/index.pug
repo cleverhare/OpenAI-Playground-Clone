@@ -1,0 +1,22 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Text Operations app using JavaScript, HTML, CSS
+  link(rel='stylesheet' href='./style.css')
+.container
+
+  p.resulttext #{data}
+  br
+  br
+  form#form(action='/ai' method='post')
+    textarea#my-text(rows='8' name='text' placeholder='Type something here...')
+  p#count-result Total characters: 0
+  .buttonsDiv
+    button.btn1 Capitalize
+    button.btn2 Lower Case
+    button.btn3#btn3 Use AI
+    button.btn4 Copy
+  // Script
+  script(src='./script.js')
